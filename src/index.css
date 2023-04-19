@@ -1,3 +1,10 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,19 +17,19 @@
   -webkit-text-size-adjust: 100%;
 }
 #root {
-  max-width: 1280px;
+  background-color: #f4eee0;
+  color: #393646;
   margin: 0;
+  padding: 0;
   text-align: center;
+  border: 2px solid red;
 }
 h1,
 h2,
 h3 {
   text-align: center;
 }
-body {
-  background-color: #f4eee0;
-  color: #393646;
-}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
