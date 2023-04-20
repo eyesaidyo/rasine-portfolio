@@ -4,7 +4,6 @@ const Projects = () => {
   return (
     <ProjectsWrapper>
       <h1>Projects Page</h1>
-
     </ProjectsWrapper >
   )
 }

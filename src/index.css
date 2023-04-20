@@ -4,6 +4,8 @@ html {
 }
 * {
   margin: 0;
+  box-sizing: border-box;
+  max-height: 100%;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -22,7 +24,6 @@ html {
   margin: 0;
   padding: 0;
   text-align: center;
-  border: 2px solid red;
 }
 h1,
 h2,
