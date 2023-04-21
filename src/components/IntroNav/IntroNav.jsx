@@ -11,10 +11,10 @@ const IntroNav = () => {
           <AviWrap src={Avi} />
 
           <h1>
-            Hey, my name is John R Irem.
+            Hey, my name is Rasine.
           </h1>
 
-          <p>i use web technologies</p>
+          <p>i am front-end developer using web technologies to create accessible, interactive interfaces for the end user. </p>
         </div>
         <div>
 
