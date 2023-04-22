@@ -4,8 +4,8 @@ display: flex;
 flex-direction:column;
 align-items: center;
 gap: 50px;
-overflow-y: auto;
-height: 100vh;
+overflow-y: hidden;
+height: 100%;
  h1{
   text-align: center;
 }

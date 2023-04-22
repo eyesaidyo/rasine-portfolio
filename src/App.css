@@ -5,4 +5,5 @@
   display: grid;
   grid-template-columns: 47% 1fr;
   height: 100%;
+  overflow-y: hidden;
 }
