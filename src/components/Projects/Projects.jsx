@@ -7,6 +7,11 @@ const Projects = () => {
       <h1>Projects Page</h1>
       <ProjectItem title={'github checker'} summary='a project fetching all my github repos and displaying them.' />
       <ProjectItem title={'meta-bnb'} summary='landing page for a metaverse real-estate directory' />
+
+      <ProjectItem title={'github checker'} summary='a project fetching all my github repos and displaying them.' />
+      <ProjectItem title={'meta-bnb'} summary='landing page for a metaverse real-estate directory' />
+      <ProjectItem title={'github checker'} summary='a project fetching all my github repos and displaying them.' />
+      <ProjectItem title={'meta-bnb'} summary='landing page for a metaverse real-estate directory' />
     </ProjectsWrapper >
   )
 }
