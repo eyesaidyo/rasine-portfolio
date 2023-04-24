@@ -10,6 +10,6 @@ export const ProjectItemWrap = styled.div`
     text-align: left;
   }
   :hover{
-    padding: 40px;
+    background-color: #4F4557;
   }
 `

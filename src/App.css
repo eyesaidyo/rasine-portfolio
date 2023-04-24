@@ -4,6 +4,6 @@
   justify-content: space-around ; */
   display: grid;
   grid-template-columns: 47% 1fr;
-  height: 100vh;
+  /* height: 100%; */
   overflow: hidden;
 }
