@@ -13,6 +13,11 @@ overflow-y: hidden;
 & p{
   font-size: 2rem;
 }
+& .icon{
+  width: 50px;
+  height: 50px;
+  margin: 50px 20px;
+}
 `
 export const AviWrap = styled.img`
   width:20%;
