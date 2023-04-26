@@ -17,12 +17,12 @@ const IntroNav = () => {
             Hey, my name is Rasine.
           </h1>
 
-          <p>i am front-end developer using web technologies to create accessible, interactive interfaces for the end user. </p>
+          <p>I'm a front-end developer using web technologies to create accessible, interactive interfaces for the end user. </p>
         </div>
         <div>
 
-          <p><Link to='/'>Projects</Link></p>
-          <p><Link to='/articles'>Articles</Link></p>
+          <p><Link className="my-link" to='/'>Projects</Link></p>
+          <p><Link className="my-link" to='/articles'>Articles</Link></p>
           <ReactIcon className='icon' />
           <VueIcon className='icon' />
           <JsIcon className='icon' />

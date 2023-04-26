@@ -9,6 +9,14 @@ export const ProjectItemWrap = styled.div`
     color: #F4EEE0;
     text-align: left;
   }
+  & .project-item-links{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    & a{
+      color: #F4EEE0;
+    }
+  }
   :hover{
     background-color: #4F4557;
   }

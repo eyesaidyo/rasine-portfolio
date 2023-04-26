@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from 'react-router-dom'
 export const IntroWrapper = styled.div`
 /* position: fixed; */
 /* margin-top: 100px; */
@@ -12,11 +12,15 @@ overflow-y: hidden;
 }
 & p{
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 & .icon{
   width: 50px;
   height: 50px;
   margin: 50px 20px;
+}
+& .my-link{
+  color: inherit;
 }
 `
 export const AviWrap = styled.img`
