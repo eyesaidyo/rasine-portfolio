@@ -6,8 +6,11 @@ import { ReactComponent as ReactIcon } from '../../assets/react.svg'
 import { ReactComponent as VueIcon } from '../../assets/vuejs.svg'
 import { ReactComponent as JsIcon } from '../../assets/js.svg'
 import { ReactComponent as Ham } from '../../assets/bars-solid.svg'
+import { useLocation } from 'react-router-dom'
 export const IntroComponent = () => {
-  return <IntroWrapper>
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+  return <IntroWrapper isHome={isHome}>
     <div className="ham">
       <Ham className='ham-icon' />
     </div>

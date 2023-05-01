@@ -41,15 +41,9 @@ overflow-y: hidden;
 }
  @media (max-width:1200px) {
   // position: fixed;
-  display: none;
-  & .ham{
-    display: block;
-    display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  }
-}
-
+  display: ${props => props.isHome ? 'block' : 'none'};
+ 
+ }
 `
 export const AviWrap = styled.img`
   width:20%;

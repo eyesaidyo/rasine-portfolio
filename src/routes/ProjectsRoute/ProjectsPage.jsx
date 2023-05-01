@@ -1,4 +1,4 @@
-import IntroNav, { IntroComponent } from "../../components/IntroNav/IntroNav"
+import { Link } from 'react-router-dom'
 import { ProjectItemWrap } from "../../components/ProjectItem/ProjectItemStyles"
 import Projects from "../../components/Projects/Projects"
 import { ProjectsPageIntroWrap } from "./ProjectsPageStyles"

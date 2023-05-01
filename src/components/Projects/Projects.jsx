@@ -1,9 +1,10 @@
 import ProjectItem from "../ProjectItem/ProjectItem"
-import { ProjectsWrapper } from "./ProjectsStyles"
-
+import { MainProjectsWrapper } from "./ProjectsStyles"
+import { ProjectsPageIntroWrap } from "../../routes/ProjectsRoute/ProjectsPageStyles"
+import { Link } from 'react-router-dom'
 const Projects = () => {
   return (
-    <ProjectsWrapper>
+    <MainProjectsWrapper>
       <h1>Projects</h1>
       <ProjectItem title={'github checker react'} summary='a project fetching all my github repos and displaying them.' repo={'https://github.com/eyesaidyo/my-repos-2'} live='https://eyesaidyo.netlify.app/' />
       <ProjectItem title={'meta-bnb'} summary='landing page for a metaverse real-estate directory'
@@ -17,8 +18,11 @@ const Projects = () => {
         live='https://rasine-todo-vue.netlify.app/'
 
       />
-
-    </ProjectsWrapper >
+      <ProjectsPageIntroWrap>
+        <Link to='/'><button>Home</button></Link>
+        <Link to='/articles'><button>Articles</button></Link>
+      </ProjectsPageIntroWrap>
+    </MainProjectsWrapper >
   )
 }
 export default Projects
