@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom'
 export const IntroWrapper = styled.div`
 /* position: fixed; */
 /* margin-top: 100px; */
@@ -22,6 +21,35 @@ overflow-y: hidden;
 & .my-link{
   color: inherit;
 }
+& .ham{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  display: none;
+  
+  
+  & .ham-icon{
+    width: 50px;
+    align-self: flex-end;
+    & :hover{
+      cursor: pointer;
+    }
+    & :active{
+      background-color: red;
+    }
+  }
+}
+ @media (max-width:1200px) {
+  // position: fixed;
+  display: none;
+  & .ham{
+    display: block;
+    display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  }
+}
+
 `
 export const AviWrap = styled.img`
   width:20%;

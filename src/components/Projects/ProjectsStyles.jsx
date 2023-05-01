@@ -12,5 +12,9 @@ height: 100%;
  h1{
   text-align: center;
 }
-
+@media (max-width: 1200px) {
+  width: 100%;
+    /* display: none; */
+  
+}
 ` 
