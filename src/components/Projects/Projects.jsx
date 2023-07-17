@@ -6,6 +6,13 @@ const Projects = () => {
   return (
     <MainProjectsWrapper>
       <h1>Projects</h1>
+      <ProjectItem title={'Chatter'} summary='a social media site for text-based content (...in progress)' repo='https://github.com/eyesaidyo/rasine-portfolio' live='https://rasine-portfolio.netlify.app/' />
+      <ProjectItem title={'to-do vue'}
+        summary='basic to-do list app in vue'
+        repo='https://github.com/eyesaidyo/todo-vue'
+        live='https://rasine-todo-vue.netlify.app/'
+
+      />
       <ProjectItem title={'github checker react'} summary='a project fetching all my github repos and displaying them.' repo={'https://github.com/eyesaidyo/my-repos-2'} live='https://eyesaidyo.netlify.app/' />
       <ProjectItem title={'meta-bnb'} summary='landing page for a metaverse real-estate directory'
         repo='https://github.com/eyesaidyo/metabnb' live='https://rajon-stage3.netlify.app/'
