@@ -2,9 +2,9 @@ import { AviWrap, IntroWrapper } from "./IntroNavStyles"
 import { Outlet } from 'react-router-dom'
 import Avi from '../../assets/rajon.jpg'
 import { Link } from 'react-router-dom'
-import { ReactComponent as ReactIcon } from '../../assets/react.svg'
-import { ReactComponent as VueIcon } from '../../assets/vuejs.svg'
-import { ReactComponent as JsIcon } from '../../assets/js.svg'
+import { ReactComponent as ReactIcon } from '../../assets/github.svg'
+import { ReactComponent as VueIcon } from '../../assets/twitterx.svg'
+import { ReactComponent as JsIcon } from '../../assets/linkedin.svg'
 import { ReactComponent as Ham } from '../../assets/bars-solid.svg'
 import { useLocation } from 'react-router-dom'
 export const IntroComponent = () => {
@@ -28,9 +28,9 @@ export const IntroComponent = () => {
 
       <p><Link className="my-link" to='projects'>Projects</Link></p>
       <p><Link className="my-link" to='/articles'>Articles</Link></p>
-      <ReactIcon className='icon' />
-      <VueIcon className='icon' />
-      <JsIcon className='icon' />
+      <a href="https://github.com/eyesaidyo"><ReactIcon className='icon' /></a>
+      <a href="https://x.com/rasine_era"><VueIcon className='icon' /></a>
+      <a href="https://www.linkedin.com/in/johnirem/"><JsIcon className='icon' /></a>
     </div>
   </IntroWrapper>
 }
