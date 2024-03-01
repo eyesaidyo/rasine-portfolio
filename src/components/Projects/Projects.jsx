@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <MainProjectsWrapper>
       <h1>Projects</h1>
-      <ProjectItem title={'Chatter'} summary='a social media site for text-based content (...in progress)' repo='https://github.com/eyesaidyo/rasine-chatter' live='https://rasine-chatter.netlify.app/' />
+      <ProjectItem title={'Chatter'} summary='a social media site for text-based content (...in progress)' repo='https://github.com/eyesaidyo/capstone-chatter' live='https://rasine-chatter.netlify.app/' />
 {/*       <ProjectItem title={'to-do vue'}
         summary='basic to-do list app in vue'
         repo='https://github.com/eyesaidyo/todo-vue'
