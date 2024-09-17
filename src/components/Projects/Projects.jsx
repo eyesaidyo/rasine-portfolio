@@ -23,7 +23,7 @@ const Projects = () => {
         repo='https://github.com/eyesaidyo/stage2'
         live='https://hng2-rasine.netlify.app/'
 
-      /> */}
+      />
       <ProjectsPageIntroWrap>
         <Link to='/'><button>Home</button></Link>
         <Link to='/articles'><button>Articles</button></Link>
