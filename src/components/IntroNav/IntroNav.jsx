@@ -7,6 +7,10 @@ import { ReactComponent as TwitterXIcon } from '../../assets/twitterx.svg'
 import { ReactComponent as LinkedInIcon } from '../../assets/linkedin.svg'
 import { ReactComponent as Ham } from '../../assets/bars-solid.svg'
 import { useLocation } from 'react-router-dom'
+import { motion } from "framer-motion"
+import { useState, useEffect } from "react"
+
+
 export const IntroComponent = () => {
   const location = useLocation()
   const isHome = location.pathname === '/'
@@ -14,23 +18,38 @@ export const IntroComponent = () => {
     <div className="ham">
       <Ham className='ham-icon' />
     </div>
+    {/* <TypingAnimation /> */}
     <div>
 
       <AviWrap src={Avi} />
 
-      <h1>
+      <motion.h1 initial={{ x: '-100vw' }} // Starting off-screen
+        animate={{ x: 0 }}        // Sliding to the original position
+        transition={{ type: 'spring', stiffness: 50 }} // Smooth spring effect
+      >
         Hey, my name is Rasine.
-      </h1>
+      </motion.h1>
 
-      <p>I'm a front-end developer using web technologies to create accessible, interactive interfaces for the end user. </p>
+      <motion.p
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{
+          opacity: 1, y: 100, transition: {
+            duration: 0.9
+          }
+        }}
+      >
+        I'm a front-end developer using web technologies to create accessible, interactive interfaces for the end user.
+
+      </motion.p>
     </div>
     <div>
 
       <p><Link className="my-link" to='projects'>Projects</Link></p>
       <p><Link className="my-link" to='/articles'>Articles</Link></p>
-      <a href="https://github.com/eyesaidyo"><GithubIcon className='icon' /></a>
-      <a href="https://x.com/rasine_era"><TwitterXIcon className='icon' /></a>
-      <a href="https://www.linkedin.com/in/johnirem/"><LinkedInIcon className='icon' /></a>
+      <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://github.com/eyesaidyo"><GithubIcon className='icon' /></motion.a>
+      <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://x.com/rasine_era"><TwitterXIcon className='icon' /></motion.a>
+      <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://www.linkedin.com/in/johnirem/"><LinkedInIcon className='icon' /></motion.a>
     </div>
   </IntroWrapper>
 }

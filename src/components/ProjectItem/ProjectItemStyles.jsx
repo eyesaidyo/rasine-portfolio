@@ -5,6 +5,7 @@ export const ProjectItemWrap = styled.div`
   background-color: #6D5D6E;
   padding: 30px;
   margin-top: 50px;
+  border-radius: 8px;
   & h3, p{
     color: #F4EEE0;
     text-align: left;
