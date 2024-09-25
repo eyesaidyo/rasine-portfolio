@@ -5,6 +5,7 @@ export const IntroWrapper = styled.div`
 height: 100vh;  
 padding: 100px 20px;
 overflow-y: hidden;
+overflow-x: hidden;
 /* border-right:5px solid #4F4557; */
 & h1{
   margin-bottom: 50px;

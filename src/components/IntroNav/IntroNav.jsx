@@ -25,9 +25,22 @@ export const IntroComponent = () => {
 
       <motion.h1 initial={{ x: '-100vw' }} // Starting off-screen
         animate={{ x: 0 }}        // Sliding to the original position
-        transition={{ type: 'spring', stiffness: 50 }} // Smooth spring effect
+        transition={{ type: 'keyframes', stiffness: 50, duration: 0.5 }} // Smooth spring effect
       >
-        Hey, my name is Rasine.
+        Hey, my name is Rasine. <motion.span animate={{
+          rotate: [0, -30, 0, 30, 0], // Keyframes for rotation: left (-30deg), right (30deg)
+        }}
+          transition={{
+            duration: 2, // Animation duration (2 seconds)
+            ease: "easeInOut", // Easing function
+            repeat: Infinity, // Loop the animation
+          }}
+          style={{
+            display: 'inline-block', // Ensure the element is inline for rotation
+            fontSize: '2rem',          // You can adjust the element's dimensions
+            // height: '100px',
+            // backgroundColor: 'lightblue', // Background color to make the element visible
+          }}>👋</motion.span>
       </motion.h1>
 
       <motion.p
@@ -38,6 +51,7 @@ export const IntroComponent = () => {
             duration: 0.9
           }
         }}
+        transition={{ type: 'keyframes', stiffness: 50, duration: 2 }}
       >
         I'm a front-end developer using web technologies to create accessible, interactive interfaces for the end user.
 
@@ -45,8 +59,8 @@ export const IntroComponent = () => {
     </div>
     <div>
 
-      <p><Link className="my-link" to='projects'>Projects</Link></p>
-      <p><Link className="my-link" to='/articles'>Articles</Link></p>
+      <motion.p whileHover={{ scale: 2.2 }}><Link className="my-link" to='projects'>Projects</Link></motion.p>
+      <motion.p whileHover={{ scale: 2.2 }}><Link className="my-link" to='/articles'>Articles</Link></motion.p>
       <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://github.com/eyesaidyo"><GithubIcon className='icon' /></motion.a>
       <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://x.com/rasine_era"><TwitterXIcon className='icon' /></motion.a>
       <motion.a whileHover={{ scale: 1.2 }} style={{ display: 'inline-block' }} href="https://www.linkedin.com/in/johnirem/"><LinkedInIcon className='icon' /></motion.a>
