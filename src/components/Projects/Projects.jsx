@@ -2,10 +2,11 @@ import ProjectItem from "../ProjectItem/ProjectItem"
 import { MainProjectsWrapper } from "./ProjectsStyles"
 import { ProjectsPageIntroWrap } from "../../routes/ProjectsRoute/ProjectsPageStyles"
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
+
 const Projects = () => {
   return (
     <MainProjectsWrapper>
-      <h1>Projects</h1>
       <ProjectItem title={'Chatter'} summary='a social media site for text-based content (...in progress)' repo='https://github.com/eyesaidyo/rasine-chatter' live='https://rasine-chatter.netlify.app/' />
       {/* <ProjectItem title={'to-do vue'}
         summary='basic to-do list app in vue'
@@ -23,7 +24,7 @@ const Projects = () => {
         repo='https://github.com/eyesaidyo/stage2'
         live='https://hng2-rasine.netlify.app/'
 
-      />
+      />/
       <ProjectsPageIntroWrap>
         <Link to='/'><button>Home</button></Link>
         <Link to='/articles'><button>Articles</button></Link>

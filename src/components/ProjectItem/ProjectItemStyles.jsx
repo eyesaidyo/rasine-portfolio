@@ -4,7 +4,7 @@ export const ProjectItemWrap = styled.div`
   width: 70%;
   background-color: #6D5D6E;
   padding: 30px;
-  margin-top: 50px;
+  transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   & h3, p{
     color: #F4EEE0;
@@ -20,5 +20,9 @@ export const ProjectItemWrap = styled.div`
   }
   :hover{
     background-color: #4F4557;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.13) ;
+    
   }
+  
 `
