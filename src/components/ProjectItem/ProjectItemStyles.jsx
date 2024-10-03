@@ -5,7 +5,7 @@ export const ProjectItemWrap = styled.div`
   background-color: #6D5D6E;
   padding: 30px;
   transition: transform 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 3px;
   & h3, p{
     color: #F4EEE0;
     text-align: left;
